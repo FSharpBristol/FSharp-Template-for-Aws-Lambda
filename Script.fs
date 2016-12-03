@@ -4,8 +4,8 @@ module Program =
     open System
     open System.IO
     open System.Text
+    open Amazon.Lambda.Core
 
-    [<EntryPoint>]
-    let main argv = 
+    let handler(count:int, context:ILambdaContext) = 
         printfn "Hello World!"
         0

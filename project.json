@@ -2,7 +2,7 @@
   "version": "1.0.0-*",
   "buildOptions": {
     "compilerName": "fsc",
-    "emitEntryPoint": true,
+    "emitEntryPoint": false,
     "compile": { 
       "includeFiles": [
         "Script.fs"
