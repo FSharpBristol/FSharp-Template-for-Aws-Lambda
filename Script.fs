@@ -6,6 +6,5 @@ module Program =
     open System.Text
     open Amazon.Lambda.Core
 
-    let handler(count:int, context:ILambdaContext) = 
+    let handler(context:ILambdaContext) = 
         printfn "Hello World!"
-        0
