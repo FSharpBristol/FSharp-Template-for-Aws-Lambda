@@ -5,12 +5,12 @@ Template for publishing F# projects to AWS Lambda.  Source code originally from 
 ## Prerequisites
 
 * [.Net Core 1.0.1 SDK](https://www.microsoft.com/net/download/core)
-    * 1.1 isn't currently supported by AWs Lambda 
+    * 1.1 isn't currently supported by AWS Lambda 
 *  An AWS Account
 
 ## Build and Package the Template
 
-The template is already set up as a working, albeit basic, Lambda function.  The tools defined in the `project.json` file allow us to package the project so it can be used by AWS.
+The template is already set up as a working, albeit basic, Lambda function.  The tool defined in the `project.json` file allows us to package the project so it can be used by AWS.
 
 CD into the root directory of the project and run:
 
@@ -20,7 +20,7 @@ dotnet build
 dotnet lambda package --configuration Release --framework netcoreapp1.0
 ```
 
-This will output the package zip to `bin\Release\netcoreapp1.0\FSharpLambdaTemplate.zip`.  When creating the AWS Lambda this is the zip file you will provide
+This will output the package zip to `bin\Release\netcoreapp1.0\FSharpLambdaTemplate.zip`.  When creating the AWS Lambda this is the zip file you will provide.
 
 ## Setting up an AWS Function
 
@@ -32,7 +32,7 @@ The function can then be set up like this, note the selected zip file is the one
 
 ![02](http://lukemerrett.com/images/fsharp-lambda-02.PNG)
 
-From here we tell AWS where to find our handler function is.  The format of the handler declarion is `Assembly::Namespace.ClassName::MethodName` so in our case it is: `FSharpLambdaTemplate::AwsLambdaTemplate.Program::handler`)
+From here we tell AWS where to find our handler function is.  The format of the handler declarion is `Assembly::Namespace.ClassName::MethodName` so in our case it is: `FSharpLambdaTemplate::AwsLambdaTemplate.Program::handler`
 
 ![03](http://lukemerrett.com/images/fsharp-lambda-03.PNG)
 
