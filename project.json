@@ -4,7 +4,8 @@
     "compilerName": "fsc",
     "emitEntryPoint": false,
     "compile": "*.fs",
-    "debugType": "portable"
+    "debugType": "portable",
+    "outputName": "FSharpLambdaTemplate"
   },
   "tools": {
     "dotnet-compile-fsc": {
