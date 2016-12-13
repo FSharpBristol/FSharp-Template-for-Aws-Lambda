@@ -3,11 +3,7 @@
   "buildOptions": {
     "compilerName": "fsc",
     "emitEntryPoint": false,
-    "compile": { 
-      "includeFiles": [
-        "Script.fs"
-      ]
-    },
+    "compile": "*.fs",
     "debugType": "portable"
   },
   "tools": {
