@@ -53,7 +53,7 @@ package:
 
 functions:
   hello:
-    handler: CsharpHandlers::AwsDotnetCsharp.Handler::Hello
+    handler: FSharpLambdaTemplate::AwsLambdaTemplate.Program::handler
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
