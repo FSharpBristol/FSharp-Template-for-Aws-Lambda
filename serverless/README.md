@@ -23,7 +23,7 @@ This will produce your deployment package at `bin/Release/netcoreapp1.0/deploy-p
 
 Once packaged, you can follow [these instructions](https://github.com/serverless/serverless#quick-start) to deploy and remotely invoke the function on AWS Lambda.
 
-In short the commands you will need to run are:
+In short the commands you will need to run are (from the root of this directory):
 
 ```
 serverless config credentials --provider aws --key {YourAwsAccessKey} --secret {YourAwsSecret}
