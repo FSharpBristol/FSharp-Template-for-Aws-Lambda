@@ -1,4 +1,5 @@
 #!/bin/bash
+
 dotnet restore
 dotnet build --configuration Release
-dotnet lambda package --configuration Release --framework netcoreapp1.0 --output-package bin/Release/netcoreapp1.0/Package.zip
+dotnet lambda package --configuration Release --framework netcoreapp1.0 --output-package bin/Release/netcoreapp1.0/deploy-package.zip
