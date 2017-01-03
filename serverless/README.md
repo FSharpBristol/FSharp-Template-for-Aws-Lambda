@@ -22,3 +22,14 @@ This will produce your deployment package at `bin/Release/netcoreapp1.0/deploy-p
 ## Deployment and Invocation
 
 Once packaged, you can follow [these instructions](https://github.com/serverless/serverless#quick-start) to deploy and remotely invoke the function on AWS Lambda.
+
+In short the commands you will need to run are:
+
+```
+serverless config credentials --provider aws --key {YourAwsAccessKey} --secret {YourAwsSecret}
+serverless deploy -v
+serverless invoke -f hello -l
+serverless remove
+```
+
+By default this template deploys to eu-west-1 (Ireland), you can change that in "serverless.yml" under the `region: eu-west-1` key.
