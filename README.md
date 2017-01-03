@@ -2,6 +2,10 @@
 
 Template for publishing F# projects to AWS Lambda.  Source code originally from this blog post http://lukemerrett.com/fsharp-on-aws-lambda/
 
+The template at the root of this Git repository uses just dotnet core and AWS Lambda Tools.
+
+If you prefer to use Serverless (and simplify the process of deploying & invoking the function) please use the template in the [Serverless folder](https://github.com/lukemerrett/FSharp-Template-for-Aws-Lambda/tree/master/serverless).
+
 ## Prerequisites
 
 * [.Net Core 1.0.1 SDK](https://www.microsoft.com/net/download/core)
