@@ -21,4 +21,4 @@ This will produce your deployment package at `bin/Release/netcoreapp1.0/deploy-p
 
 ## Deployment and Invocation
 
-Once packaged, you can follow [these instructions](https://github.com/jimmyp/serverless/tree/75f7fe78e138d6bfbe011d1cabef4b4f1538cb3e#quick-start) to deploy and remotely invoke the function on AWS Lambda.
+Once packaged, you can follow [these instructions](https://github.com/serverless/serverless#quick-start) to deploy and remotely invoke the function on AWS Lambda.
