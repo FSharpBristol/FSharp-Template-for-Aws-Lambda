@@ -17,13 +17,14 @@
 [Rr]eleases/
 x64/
 x86/
-build/
 bld/
 [Bb]in/
 [Oo]bj/
 
-# Visual Studo 2015 cache/options directory
+# Visual Studio 2015 cache/options directory
 .vs/
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -38,37 +39,9 @@ TestResult.xml
 [Rr]eleasePS/
 dlldata.c
 
-*_i.c
-*_p.c
-*_i.h
-*.ilk
-*.meta
-*.obj
-*.pch
-*.pdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tli
-*.tlh
-*.tmp
-*.tmp_proj
-*.log
-*.vspscc
-*.vssscc
-.builds
-*.pidb
-*.svclog
-*.scc
-
 # DNX
 project.lock.json
-project.fragment.lock.json
 artifacts/
-.vscode/
-appsettings.json
 
 *_i.c
 *_p.c
@@ -102,6 +75,7 @@ _Chutzpah*
 ipch/
 *.aps
 *.ncb
+*.opendb
 *.opensdf
 *.sdf
 *.cachefile
@@ -110,6 +84,7 @@ ipch/
 *.psess
 *.vsp
 *.vspx
+*.sap
 
 # TFS 2012 Local Workspace
 $tf/
@@ -122,7 +97,7 @@ _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
-# JustCode is a .NET coding addin-in
+# JustCode is a .NET coding add-in
 .JustCode
 
 # TeamCity is a build add-in
@@ -134,6 +109,7 @@ _TeamCity*
 # NCrunch
 _NCrunch_*
 .*crunch*.local.xml
+nCrunchTemp_*
 
 # MightyMoose
 *.mm.*
@@ -161,7 +137,7 @@ publish/
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
-# TODO: Comment the next line if you want to checkin your web deploy settings 
+# TODO: Comment the next line if you want to checkin your web deploy settings
 # but database connection strings (with potential passwords) will be unencrypted
 *.pubxml
 *.publishproj
@@ -174,18 +150,33 @@ publish/
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
+# NuGet v3's project.json files produces more ignoreable files
+*.nuget.props
+*.nuget.targets
 
-# Windows Azure Build Output
+# Microsoft Azure Build Output
 csx/
 *.build.csdef
 
+# Microsoft Azure Emulator
+ecf/
+rcf/
+
+# Microsoft Azure ApplicationInsights config file
+ApplicationInsights.config
+
 # Windows Store app package directory
 AppPackages/
+BundleArtifacts/
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!*.[Cc]ache/
 
 # Others
-*.[Cc]ache
 ClientBin/
-[Ss]tyle[Cc]op.*
 ~$*
 *~
 *.dbmdl
@@ -193,7 +184,7 @@ ClientBin/
 *.pfx
 *.publishsettings
 node_modules/
-bower_components/
+orleans.codegen.cs
 
 # RIA/Silverlight projects
 Generated_Code/
@@ -218,6 +209,9 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 
+# GhostDoc plugin setting file
+*.GhostDoc.xml
+
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
 
@@ -227,5 +221,26 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
-# Serverless
-.serverless/
+# Visual Studio LightSwitch build output
+**/*.HTMLClient/GeneratedArtifacts
+**/*.DesktopClient/GeneratedArtifacts
+**/*.DesktopClient/ModelManifest.xml
+**/*.Server/GeneratedArtifacts
+**/*.Server/ModelManifest.xml
+_Pvt_Extensions
+
+# Paket dependency manager
+.paket/paket.exe
+
+# FAKE - F# Make
+.fake/
+*.orig
+
+# macOS
+.DS_Store
+
+# JetBrains Rider C# IDE
+.idea*
+
+# Serverless directories
+.serverless
