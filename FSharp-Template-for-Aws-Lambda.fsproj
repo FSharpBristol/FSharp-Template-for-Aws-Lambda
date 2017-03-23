@@ -6,8 +6,7 @@
     <AssemblyName>FSharpLambdaTemplate</AssemblyName>
     <OutputType>Library</OutputType>
     <PackageId>FSharp-Template-for-Aws-Lambda</PackageId>
-    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
-    <RuntimeFrameworkVersion>1.0.3</RuntimeFrameworkVersion>
+    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,8 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <DotNetCliToolReference Include="dotnet-compile-fsc" Version="1.0.0-preview2-*" />
-    <DotNetCliToolReference Include="Amazon.Lambda.Tools" Version="1.2.1-preview1" />
+    <DotNetCliToolReference Include="Amazon.Lambda.Tools" Version="1.4.0" />
   </ItemGroup>
 
 </Project>
