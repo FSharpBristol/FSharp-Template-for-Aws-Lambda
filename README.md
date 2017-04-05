@@ -8,7 +8,8 @@ If you prefer to use Serverless (and simplify the process of deploying & invokin
 
 ## Prerequisites
 
-* [.Net Core 1.0.1 SDK](https://www.microsoft.com/net/download/core)
+* [.NET Core SDK Installer](https://www.microsoft.com/net/download/core)
+    * This contains runtimes v1.0.4 and v1.1.1
     * 1.1 isn't currently supported by AWS Lambda 
 *  An AWS Account
 
