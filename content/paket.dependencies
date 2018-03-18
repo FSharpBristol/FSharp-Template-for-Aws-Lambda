@@ -1,0 +1,6 @@
+source https://www.nuget.org/api/v2
+
+clitool Amazon.Lambda.Tools
+nuget Amazon.Lambda.Core
+nuget Amazon.Lambda.Serialization.Json
+nuget FSharp.Core
