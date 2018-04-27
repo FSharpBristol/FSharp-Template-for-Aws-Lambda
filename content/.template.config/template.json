@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Luke, Merrett, Richard Harding",
+    "classifications": [ "F#" ],
+    "name": "AWS Lambda FSharp Function",
+    "tags": {
+      "language": "F#",
+      "type": "project"
+    },
+    "identity": "FSharpBristol.lambda.fsharp",
+    "shortName": "lambda-fsharp",
+    "sourceName": "FSharpTemplateforAwsLambda"    
+  }

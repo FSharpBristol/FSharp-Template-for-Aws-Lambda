@@ -1,0 +1,4 @@
+Amazon.Lambda.Tools
+Amazon.Lambda.Core
+Amazon.Lambda.Serialization.Json
+nuget FSharp.Core

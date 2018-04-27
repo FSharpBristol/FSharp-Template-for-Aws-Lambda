@@ -1,27 +1,32 @@
 ﻿<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <Description>AWS Lambda FSharp Template</Description>
+    <Authors>Luke Merrett, Richard Harding</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <DebugType>portable</DebugType>
-    <AssemblyName>FSharpLambdaTemplate</AssemblyName>
-    <OutputType>Library</OutputType>
-    <PackageId>FSharp-Template-for-Aws-Lambda</PackageId>
-    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
+    <AssemblyName>FSharpLambdaTemplate</AssemblyName>    
+    <PackageId>FSharp-Template-for-Aws-Lambda</PackageId>   
+    <PackageType>Template</PackageType> 
+    <NoBuild>true</NoBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Amazon.Lambda.Core" Version="1.0.0" />
-    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.0.1" />
-    <PackageReference Include="FSharp.NET.Sdk" Version="1.0.*" PrivateAssets="All" />
-    <PackageReference Include="FSharp.Core" Version="4.1.*" />
-  </ItemGroup>
+  <PropertyGroup>
+    <ExcludeFromPackage>
+        content/node_modules/**/*;
+        content/packages/**/*;
+        content/paket-files/**/*;
+        **/obj/**/*;
+        **/bin/**/*;
+        **/.fake/**/*;
+    </ExcludeFromPackage>
+</PropertyGroup>  
 
   <ItemGroup>
-    <Compile Include="Script.fs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <DotNetCliToolReference Include="Amazon.Lambda.Tools" Version="1.4.0" />
+    <Content Include="content/**/*" Exclude="$(ExcludeFromPackage)" >
+        <PackagePath>content/</PackagePath>
+    </Content>
   </ItemGroup>
 
 </Project>
